@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chitty profit calculator</string>
+    <string name="enter_no_of_months_to_be_paid">No of months to be paid</string>
+    <string name="enter_monthly_pay">Monthly pay</string>
+    <string name="enter_no_of_months_paid">No of months paid</string>
+    <string name="enter_auctioned_money">Auctioned money</string>
+    <string name="enter_interest_when_deposited_for_future_liability">Interest_when_deposited for future liability</string>
+    <string name="enter_interest_when_deposited_for_balance_price_money">Interest when deposited for balance price money</string>
+    <string name="profit">Profit</string>
+    <string name="profittxt">Profit: ₹%s</string>
+    <string name="calculate">Calculate</string>
+</resources>

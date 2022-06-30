@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/no_of_month"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_no_of_months_to_be_paid"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="100" />
+
+    <EditText
+        android:id="@+id/monthly_pay"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_monthly_pay"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_of_month"
+        android:autofillHints="5000" />
+
+    <EditText
+        android:id="@+id/months_paid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_no_of_months_paid"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_pay"
+        android:autofillHints="20" />
+
+    <EditText
+        android:id="@+id/auctioned_money"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_auctioned_money"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/months_paid"
+        android:autofillHints="100000" />
+
+    <EditText
+        android:id="@+id/rate_of_interest_fl"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_interest_when_deposited_for_future_liability"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auctioned_money"
+        android:autofillHints="7.5" />
+
+    <EditText
+        android:id="@+id/rate_of_interest_bal"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_interest_when_deposited_for_balance_price_money"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_of_interest_fl"
+        android:autofillHints="8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toTopOf="@+id/profit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_of_interest_bal"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:text="@string/profit"
+        tools:text="@string/profittxt"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
